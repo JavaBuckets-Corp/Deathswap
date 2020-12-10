@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Deathswap:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Deathswap_jar</output-path>
+    <root id="archive" name="Deathswap.jar">
+      <element id="module-output" name="Deathswap" />
+    </root>
+  </artifact>
+</component>

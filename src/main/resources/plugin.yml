@@ -1,0 +1,12 @@
+name: Deathswap
+version: ${project.version}
+main: com.javabuckets.deathswap.Deathswap
+authors: [JavaBuckets]
+description: Puts you and a friend in a death swap till someone dies!
+api-version: 1.13
+
+commands:
+   deathswap:
+      description: Puts you and the given player in a death swap. Interval is optional, but it will specify the swap interval in minutes.
+      usage: /deathswap <player> <interval>
+      permission: deathswap.canstart
