@@ -10,10 +10,11 @@ public class PlayerEventListener implements Listener {
     public void onPlayerDeath(PlayerDeathEvent event) {
         Player player = event.getEntity();
 
-        for (Player p : CommandDeathswap.contestants) {
-            if (p.getUniqueId() == player.getUniqueId()) {
-                CommandDeathswap.stopDeathswap();
+        if (Deathswap.isRunning) {
+            if (Deathswap.contestants.contains(player)) {
+                Deathswap.contestantDied(player);
             }
         }
+
     }
 }
